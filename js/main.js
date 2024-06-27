@@ -28,6 +28,7 @@
 
     // Hero Header carousel
     $(".header-carousel").owlCarousel({
+        animatein: 'fadeIn',
         animateOut: 'fadeOut',
         items: 1,
         autoplay: true,
