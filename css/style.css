@@ -1235,10 +1235,18 @@
 }
 
 .hero-banner {
-  animation: 6s ease 0s normal none infinite running zoomEffect;
-  -webkit-animation: 6s ease 0s normal none infinite running zoomEffect;
-  -o-animation: 6s ease 0s normal none infinite running zoomEffect;
-  -moz--o-animation: 6s ease 0s normal none infinite running zoomEffect;
+  /* animation: zoomEffect 15s linear 0s normal none infinite running;
+  -webkit-animation: zoomEffect 15s linear 0s normal none infinite running;
+  -o-animation: zoomEffect 15s linear 0s normal none infinite running;
+  -moz--o-animation: zoomEffect 15s linear 0s normal none infinite running; */
+  animation-name: zoomEffect;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
 
 @keyframes zoomEffect {
