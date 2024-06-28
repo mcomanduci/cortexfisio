@@ -35,8 +35,8 @@
     loop: true,
     nav: true,
     navText: [
-      '<i class="bi bi-arrow-left"></i>',
-      '<i class="bi bi-arrow-right"></i>',
+      '<i class="bi bi-arrow-left hide-phone"></i>',
+      '<i class="bi bi-arrow-right hide-phone"></i>',
     ],
   });
 

@@ -1253,3 +1253,13 @@
 .owl-carousel .owl-item {
   overflow: hidden;
 }
+
+@media (max-width: 700px) {
+  .owl-prev {
+    display: none !important;
+  }
+
+  .owl-next {
+    display: none !important;
+  }
+}
