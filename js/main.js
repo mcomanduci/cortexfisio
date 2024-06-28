@@ -128,3 +128,11 @@
     return false;
   });
 })(jQuery);
+
+$(window).scroll(function() {    
+  const scroll = $(window).scrollTop();
+
+  if (scroll >= 500) {
+      $("#back-to-top").addClass("back-to-top");
+  }
+});
