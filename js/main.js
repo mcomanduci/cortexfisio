@@ -127,15 +127,15 @@
   });
 })(jQuery);
 
-if ($(window).width() < 983) {
-  $("#logo").attr("src", "img/logo.png");
-} else {
-  $("#logo").attr("src", "img/logo-branca.png");
-}
-$(window).resize(function () {
-  if ($(window).width() < 983) {
-    $("#logo").attr("src", "img/logo.png");
-  } else {
-    $("#logo").attr("src", "img/logo-branca.png");
-  }
-});
+// if ($(window).width() < 983) {
+//   $("#logo").attr("src", "img/logo.png");
+// } else {
+//   $("#logo").attr("src", "img/logo-branca.png");
+// }
+// $(window).resize(function () {
+//   if ($(window).width() < 983) {
+//     $("#logo").attr("src", "img/logo.png");
+//   } else {
+//     $("#logo").attr("src", "img/logo-branca.png");
+//   }
+// });
