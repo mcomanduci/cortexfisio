@@ -1365,3 +1365,25 @@
 #sm-btn {
   background-color: var(--bs-primary);
 }
+
+#title-services {
+  max-width: 1200px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #title-services h1 {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1000px) {
+  #title-services h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 770px) {
+  #title-services h1 {
+    font-size: 30px;
+  }
+}
