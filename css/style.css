@@ -660,7 +660,7 @@
   display: block;
   width: 115px;
   height: 115px;
-  background: rgba(26,165,82,0.5);
+  background: rgba(26, 165, 82, 0.5);
   border-radius: 50%;
   animation: pulse-border 1500ms ease-out infinite;
   transition: 0.5s;
@@ -1354,14 +1354,14 @@
   color: var(--bs-dark-green) !important;
 }
 
-.green {
-  color: var(--bs-dark-green) !important;
-}
-
-.green:hover {
-  color: var(--bs-green) !important;
-}
-
 .text-terciary {
   color: var(--bs-dark-blue) !important;
+}
+
+.fa-star {
+  color: #ffe500 !important;
+}
+
+#sm-btn {
+  background-color: var(--bs-primary);
 }
