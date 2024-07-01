@@ -522,7 +522,7 @@
   z-index: 9;
 }
 .service .service-item:hover .service-content .service-content-inner h5 {
-  color: var(--bs-secondary);
+  color: var(--bs-dark-blue);
 }
 
 /*** Service End ***/
@@ -780,7 +780,7 @@
 }
 
 .team .team-item .team-content h5 {
-  color: var(--bs-secondary);
+  color: var(--bs-dark-blue);
   transition: 0.5s;
 }
 
@@ -1360,4 +1360,8 @@
 
 .green:hover {
   color: var(--bs-green) !important;
+}
+
+.text-terciary {
+  color: var(--bs-dark-blue) !important;
 }
