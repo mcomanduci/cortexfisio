@@ -74,11 +74,11 @@
 }
 
 .btn.btn-light {
-  box-shadow: inset 0 0 0 0 var(--bs-primary);
+  box-shadow: inset 0 0 0 0 var(--bs-dark-green);
 }
 
 .btn.btn-light:hover {
-  box-shadow: inset 300px 0 0 0 var(--bs-primary);
+  box-shadow: inset 300px 0 0 0 var(--bs-dark-green);
   color: var(--bs-light) !important;
 }
 
@@ -370,7 +370,7 @@
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
   box-shadow: inset 150px 0 0 0 var(--bs-light) !important;
-  color: var(--bs-primary) !important;
+  color: var(--bs-dark-green) !important;
 }
 
 @media (max-width: 576px) {
@@ -624,12 +624,12 @@
 }
 
 .appointment .appointment-form .btn.btn-primary {
-  box-shadow: inset 0 0 0 0 var(--bs-primary);
+  box-shadow: inset 0 0 0 0 var(--bs-dark-green);
 }
 
 .appointment .appointment-form .btn.btn-primary:hover {
   box-shadow: inset 600px 0 0 0 var(--bs-light) !important;
-  color: var(--bs-primary) !important;
+  color: var(--bs-dark-green) !important;
 }
 /*** Youtube Video start ***/
 .video {
@@ -1352,4 +1352,12 @@
 
 .text-primary::before {
   color: var(--bs-dark-green) !important;
+}
+
+.green {
+  color: var(--bs-dark-green) !important;
+}
+
+.green:hover {
+  color: var(--bs-green) !important;
 }
