@@ -70,6 +70,21 @@
   }
 }
 
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 #example {
   position: relative !important;
   height: 100vh;
@@ -130,19 +145,44 @@
   animation-delay: 0s;
 }
 
-/* .hero-banner {
-  animation: zoomEffect 5s linear 0s normal none infinite running;
-  -webkit-animation: zoomEffect 5s linear 0s normal none infinite running;
-  -o-animation: zoomEffect 5s linear 0s normal none infinite running;
-  -moz--o-animation: zoomEffect 5s linear 0s normal none infinite running;
-  z-index: -10;
-} */
+#example .slides img {
+  animation: zoomEffect 25s linear normal none infinite running;
+  -webkit-animation: zoomEffect 25s linear normal none infinite running;
+  -o-animation: zoomEffect 25s linear normal none infinite running;
+  -moz--o-animation: zoomEffect 25s linear normal none infinite running;
+}
 
-@keyframes zoomEffect {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.2);
-  }
+#example .slides:nth-of-type(1) img {
+  -webkit-animation-delay: 20s;
+  -moz-animation-delay: 20s;
+  -o-animation-delay: 20s;
+  animation-delay: 20s;
+}
+#example .slides:nth-of-type(2) img {
+  -webkit-animation-delay: 15s;
+  -moz-animation-delay: 15s;
+  -o-animation-delay: 15s;
+  animation-delay: 15s;
+}
+#example .slides:nth-of-type(3) img {
+  -webkit-animation-delay: 10s;
+  -moz-animation-delay: 10s;
+  -o-animation-delay: 10s;
+  animation-delay: 10s;
+}
+#example .slides:nth-of-type(4) img {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+}
+#example .slides:nth-of-type(5) img {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+#example {
+  overflow: hidden;
 }
