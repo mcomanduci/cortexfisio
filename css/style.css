@@ -456,13 +456,29 @@
 /*** Carousel Hero Header End ***/
 
 /*** Single Page Hero Header Start ***/
-.bg-breadcrumb {
+#team.bg-breadcrumb {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/office\ 5.jpg);
+    url(../img/hero-team.avif);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 160px 0 60px 0;
+  padding: 100px 0 0 0;
+}
+
+#contact.bg-breadcrumb {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/11349\ 2.jpg);
+  background-position: 0 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 0 0;
+}
+
+@media (max-width: 1000px) {
+  #team.bg-breadcrumb,
+  #contact.bg-breadcrumb {
+    padding: 10px 0 0 0;
+  }
 }
 
 .bg-breadcrumb .breadcrumb-item a {
@@ -1432,7 +1448,6 @@
   .flex-card {
     flex-direction: column;
   }
-  
 }
 
 .footer-item span {
