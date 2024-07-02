@@ -1087,10 +1087,13 @@
   color: var(--bs-white) !important;
 }
 
-.contact .contact-form .form-floating input,
-.contact .contact-form .form-floating textarea,
 .contact .contact-form .form-floating label {
-  color: var(--bs-light);
+  color: var(--bs-light)
+}
+
+.contact .contact-form .form-floating input,
+.contact .contact-form .form-floating textarea {
+  color: var(--bs-dark-blue);
 }
 
 /* Testimonial Section Title Start */
@@ -1182,7 +1185,7 @@
 }
 
 .footer .footer-item a:hover {
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
   color: var(--bs-primary);
 }
 
@@ -1422,5 +1425,8 @@
   }
   .padin {
     padding-left: 64px;
+  }
+  .lilwider {
+    width: 26% !important;
   }
 }

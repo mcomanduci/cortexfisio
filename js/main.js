@@ -50,6 +50,37 @@
     ],
   });
 
+  // Send to Whatsapp Index
+  function sendToWhatsapp() {
+    const number = "5537996719764";
+    const name = $("#name-form-index").val();
+    const email = $("#email-form-index").val();
+    const phone = $("#phone-form-index").val();
+    const gender = $("#gender-form-index").val();
+    const message = $("#text-form-index").val();
+
+    const url = `https://api.whatsapp.com/send?phone=${number}&text=Nome: ${name}%0aEmail: ${email}%0aTelefone: ${phone}%0aMensagem: ${message}%0a`;
+    window.open(url, "_blank", "noreferrer").focus();
+  }
+
+  $("#send-form-index").click(sendToWhatsapp);
+
+  // Send to Whatsapp Contact
+  function sendToWhatsappContact(e) {
+    e.preventDefault();
+    const number = "5537996719764";
+    const name = $("#name-form-contact").val();
+    const email = $("#email-form-contact").val();
+    const phone = $("#phone-form-contact").val();
+    const subject = $("#subject-form-contact").val();
+    const message = $("#text-form-contact").val();
+
+    const url = `https://api.whatsapp.com/send?phone=${number}&text=Nome: ${name}%0aEmail: ${email}%0aTelefone: ${phone}%0aAssunto: ${subject}%0aMensagem: ${message}%0a`;
+    window.open(url, "_blank", "noreferrer").focus();
+  }
+
+  $("#send-form-contact").click(sendToWhatsappContact);
+
   // Back to top button
   $(window).scroll(function () {
     $(this).scrollTop() > 300

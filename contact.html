@@ -179,23 +179,15 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               rhoncus feugiat vestibulum. Quisque viverra urna quis dui euismod
               feugiat. Aenean porta sem eu ex laoreet varius in in orci.
-              <!-- The contact form is currently inactive. Get a functional and
-              working contact form with Ajax & PHP in a few minutes. Just copy
-              and paste the files, add a little code and you're done.
-              <a
-                class="text-dark fw-bold"
-                href="https://htmlcodex.com/contact-form"
-                >Download Now</a
-              >. -->
             </p>
             <form>
               <div class="row g-3">
                 <div class="col-lg-12 col-xl-6">
                   <div class="form-floating">
                     <input
+                      id="name-form-contact"
                       type="text"
                       class="form-control bg-transparent border border-white"
-                      id="name"
                       placeholder="Your Name"
                     />
                     <label for="name">Nome</label>
@@ -204,9 +196,9 @@
                 <div class="col-lg-12 col-xl-6">
                   <div class="form-floating">
                     <input
+                      id="email-form-contact"
                       type="email"
                       class="form-control bg-transparent border border-white"
-                      id="email"
                       placeholder="Your Email"
                     />
                     <label for="email">Email</label>
@@ -215,9 +207,9 @@
                 <div class="col-lg-12 col-xl-6">
                   <div class="form-floating">
                     <input
+                      id="phone-form-contact"
                       type="phone"
                       class="form-control bg-transparent border border-white"
-                      id="phone"
                       placeholder="Phone"
                     />
                     <label for="phone">Telefone</label>
@@ -237,9 +229,9 @@
                 <div class="col-12">
                   <div class="form-floating">
                     <input
+                      id="subject-form-contact"
                       type="text"
                       class="form-control bg-transparent border border-white"
-                      id="subject"
                       placeholder="Subject"
                     />
                     <label for="subject">Assunto</label>
@@ -248,16 +240,19 @@
                 <div class="col-12">
                   <div class="form-floating">
                     <textarea
+                      id="text-form-contact"
                       class="form-control bg-transparent border border-white"
                       placeholder="Leave a message here"
-                      id="message"
                       style="height: 160px"
                     ></textarea>
                     <label for="message">Mensagem</label>
                   </div>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-light text-primary w-100 py-3">
+                  <button
+                    class="btn btn-light text-primary w-100 py-3"
+                    id="send-form-contact"
+                  >
                     Enviar Mensagem
                   </button>
                 </div>
