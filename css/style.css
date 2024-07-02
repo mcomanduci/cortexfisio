@@ -631,7 +631,7 @@
       rgba(247, 250, 253, 0.91),
       rgba(247, 250, 253, 0.91)
     ),
-    url(../img/carousel-2.jpg);
+    url(../img/background-clinic.avif);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -816,7 +816,7 @@
 /*** testimonial Start ***/
 .testimonial {
   background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)),
-    url(../img/carousel-1.jpg);
+    url(../img/background-testimonial.avif);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1071,7 +1071,7 @@
 /*** Contact Start ***/
 .contact {
   background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)),
-    url(../img/carousel-1.jpg);
+    url(../img/background-clinic.avif);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1088,7 +1088,7 @@
 }
 
 .contact .contact-form .form-floating label {
-  color: var(--bs-light)
+  color: var(--bs-light);
 }
 
 .contact .contact-form .form-floating input,
@@ -1169,7 +1169,7 @@
 /*** Footer Start ***/
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url(../img/carousel-2.jpg);
+    url(../img/carousel-2.avif);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1398,7 +1398,7 @@
 }
 
 .display-sp {
-  font-size: calc(1.4rem + 3vw);
+  font-size: calc(4rem);
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
