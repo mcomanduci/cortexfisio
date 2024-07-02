@@ -1440,3 +1440,6 @@
   align-items: center;
 }
 
+.blue-icon::before {
+  color: var(--bs-primary) !important;
+}
