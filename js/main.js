@@ -24,28 +24,24 @@
   // });
 
   // Hero Header carousel
-  $(".header-carousel").owlCarousel({
-    animateIn: "fadeIn",
-    animateOut: "fadeOut",
-    responsiveClass: true,
-    items: 1,
-    autoplay: true,
-    smartSpeed: 1000,
-    dots: false,
-    loop: true,
-    nav: true,
-    navText: [
-      '<i class="bi bi-arrow-left hide-phone"></i>',
-      '<i class="bi bi-arrow-right hide-phone"></i>',
-    ],
-  });
+  // $(".header-carousel").owlCarousel({
+  //   // animateIn: "fadeIn",
+  //   animateOut: "zoomOut",
+  //   responsiveClass: true,
+  //   items: 1,
+  //   autoplay: true,
+  //   // autoplayTimeout: 5000,
+  //   // smartSpeed: 5000,
+  //   dots: false,
+  //   loop: true,
+  // });
 
-  $(".header-carousel").on("changed.owl.carousel", function () {
-    $(".hero-banner").css("animation", "none");
-    window.requestAnimationFrame(function () {
-      $(".hero-banner").css("animation", "");
-    });
-  });
+  // $(".header-carousel").on("changed.owl.carousel", function () {
+  //   $(".hero-banner").css("animation", "none");
+  //   window.requestAnimationFrame(function () {
+  //     $(".hero-banner").css("animation", "");
+  //   });
+  // });
 
   // International carousel
   $(".testimonial-carousel").owlCarousel({

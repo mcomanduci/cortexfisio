@@ -324,7 +324,8 @@
   }
 }
 /*** Carousel Hero Header Start ***/
-.header-carousel {
+.header-carousel,
+.header-carousel-test {
   position: relative;
 }
 
@@ -383,16 +384,22 @@
   .header-carousel
     .header-carousel-item
     .carousel-caption
-    .carousel-caption-content {
+    .carousel-caption-content,
+    .header-carousel-test
+    .header-carousel-test-item
+    .carousel-test-caption
+    .carousel-test-caption-content {
     width: 95% !important;
   }
 }
 
 .header-carousel .header-carousel-item,
-.header-carousel .header-carousel-item img {
+.header-carousel .header-carousel-item img,
+.header-carousel-test .header-carousel-test-item,
+.header-carousel-test .header-carousel-test-item img {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 100%;
   /* margin-top: 95px; */
   display: block;
   object-fit: cover;
@@ -401,7 +408,9 @@
 
 @media (max-width: 992px) {
   .header-carousel .header-carousel-item,
-  .header-carousel .header-carousel-item img {
+  .header-carousel .header-carousel-item img,
+  .header-carousel-test .header-carousel-test-item,
+  .header-carousel-test .header-carousel-test-item img {
     margin-top: 0;
     transition: 0.5s;
   }
@@ -414,7 +423,8 @@
   }
 }
 
-.header-carousel .header-carousel-item .carousel-caption {
+.header-carousel .header-carousel-item .carousel-caption,
+.header-carousel-test .header-carousel-test-item .carousel-test-caption {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -430,9 +440,18 @@
 .header-carousel
   .header-carousel-item
   .carousel-caption
-  .carousel-caption-content {
+  .carousel-caption-content,
+.header-carousel-test
+  .header-carousel-test-item
+  .carousel-test-caption
+  .carousel-test-caption-content {
   position: relative;
   width: 75%;
+}
+
+.carousel-test-caption {
+  color: #fff;
+  text-align: center;
 }
 /*** Carousel Hero Header End ***/
 
@@ -1229,11 +1248,12 @@
   align-items: center;
 }
 
-.hero-banner {
-  animation: zoomEffect 15s linear 0s normal none infinite running;
-  -webkit-animation: zoomEffect 15s linear 0s normal none infinite running;
-  -o-animation: zoomEffect 15s linear 0s normal none infinite running;
-  -moz--o-animation: zoomEffect 15s linear 0s normal none infinite running;
+/* .hero-banner {
+  animation: zoomEffect 5s linear 0s normal none infinite running;
+  -webkit-animation: zoomEffect 5s linear 0s normal none infinite running;
+  -o-animation: zoomEffect 5s linear 0s normal none infinite running;
+  -moz--o-animation: zoomEffect 5s linear 0s normal none infinite running;
+  z-index: -10;
 }
 
 @keyframes zoomEffect {
@@ -1243,7 +1263,7 @@
   to {
     transform: scale(1.2);
   }
-}
+} */
 
 .owl-carousel .owl-item {
   overflow: hidden;
@@ -1364,6 +1384,10 @@
 
 #sm-btn {
   background-color: var(--bs-primary);
+}
+
+#top-icon::before {
+  color: var(--bs-primary) !important;
 }
 
 #title-services {

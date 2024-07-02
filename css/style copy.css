@@ -70,15 +70,15 @@
 
 .btn.btn-primary:hover {
   box-shadow: inset 300px 0 0 0 var(--bs-light) !important;
-  color: var(--bs-primary) !important;
+  color: var(--bs-dark-green) !important;
 }
 
 .btn.btn-light {
-  box-shadow: inset 0 0 0 0 var(--bs-primary);
+  box-shadow: inset 0 0 0 0 var(--bs-dark-green);
 }
 
 .btn.btn-light:hover {
-  box-shadow: inset 300px 0 0 0 var(--bs-primary);
+  box-shadow: inset 300px 0 0 0 var(--bs-dark-green);
   color: var(--bs-light) !important;
 }
 
@@ -336,7 +336,7 @@
   left: 20px;
   transform: translateY(-50%);
   border-radius: 50%;
-  background: var(--bs-primary);
+  background: var(--bs-dark-green);
   color: var(--bs-white);
   font-size: 30px;
   display: flex;
@@ -353,7 +353,7 @@
   right: 20px;
   transform: translateY(-50%);
   border-radius: 50%;
-  background: var(--bs-primary);
+  background: var(--bs-dark-green);
   color: var(--bs-white);
   font-size: 30px;
   display: flex;
@@ -370,7 +370,7 @@
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
   box-shadow: inset 150px 0 0 0 var(--bs-light) !important;
-  color: var(--bs-primary) !important;
+  color: var(--bs-dark-green) !important;
 }
 
 @media (max-width: 576px) {
@@ -522,7 +522,7 @@
   z-index: 9;
 }
 .service .service-item:hover .service-content .service-content-inner h5 {
-  color: var(--bs-secondary);
+  color: var(--bs-dark-blue);
 }
 
 /*** Service End ***/
@@ -620,16 +620,16 @@
 }
 
 .appointment .appointment-form {
-  background: rgba(239, 162, 134, 0.3);
+  background: rgba(21, 185, 217, 0.1);
 }
 
 .appointment .appointment-form .btn.btn-primary {
-  box-shadow: inset 0 0 0 0 var(--bs-primary);
+  box-shadow: inset 0 0 0 0 var(--bs-dark-green);
 }
 
 .appointment .appointment-form .btn.btn-primary:hover {
   box-shadow: inset 600px 0 0 0 var(--bs-light) !important;
-  color: var(--bs-primary) !important;
+  color: var(--bs-dark-green) !important;
 }
 /*** Youtube Video start ***/
 .video {
@@ -660,7 +660,7 @@
   display: block;
   width: 115px;
   height: 115px;
-  background: var(--bs-primary);
+  background: rgba(26, 165, 82, 0.5);
   border-radius: 50%;
   animation: pulse-border 1500ms ease-out infinite;
   transition: 0.5s;
@@ -676,7 +676,7 @@
   display: block;
   width: 100px;
   height: 100px;
-  background: var(--bs-secondary);
+  background: var(--bs-dark-green);
   border-radius: 50%;
   transition: all 300ms;
 }
@@ -780,7 +780,7 @@
 }
 
 .team .team-item .team-content h5 {
-  color: var(--bs-secondary);
+  color: var(--bs-dark-blue);
   transition: 0.5s;
 }
 
@@ -1229,11 +1229,16 @@
   align-items: center;
 }
 
-.hero-banner {
-  animation: zoomEffect 15s linear 0s normal none infinite running;
-  -webkit-animation: zoomEffect 15s linear 0s normal none infinite running;
-  -o-animation: zoomEffect 15s linear 0s normal none infinite running;
-  -moz--o-animation: zoomEffect 15s linear 0s normal none infinite running;
+.hero-banner,
+.hero-banner2,
+.hero-banner3,
+.hero-banner4,
+.hero-banner5,
+.hero-banner6 {
+  animation: zoomEffect 6s linear 0s normal none infinite running;
+  -webkit-animation: zoomEffect 6s linear 0s normal none infinite running;
+  -o-animation: zoomEffect 6s linear 0s normal none infinite running;
+  -moz--o-animation: zoomEffect 6s linear 0s normal none infinite running;
 }
 
 @keyframes zoomEffect {
@@ -1306,7 +1311,7 @@
 
   #fixo-desktop .navbar-container {
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.38);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -1329,11 +1334,65 @@
   }
 
   #fixo-desktop .nav-item.active {
-    color: var(--bs-primary) !important;
+    color: var(--bs-dark-blue) !important;
+  }
+
+  #fixo-desktop .nav-item.active::before {
+    background-color: var(--bs-dark-blue) !important;
+  }
+
+  #fixo-desktop .nav-item::before {
+    background-color: var(--bs-dark-blue) !important;
+  }
+
+  #fixo-desktop .nav-item::before:hover {
+    background-color: var(--bs-dark-blue) !important;
   }
 }
 
 .header-carousel .header-carousel-item,
 .header-carousel .header-carousel-item img {
   height: 100vh;
+}
+
+.text-primary::before {
+  color: var(--bs-dark-green) !important;
+}
+
+.text-terciary {
+  color: var(--bs-dark-blue) !important;
+}
+
+.fa-star {
+  color: #ffe500 !important;
+}
+
+#sm-btn {
+  background-color: var(--bs-primary);
+}
+
+#top-icon::before {
+  color: var(--bs-primary) !important;
+}
+
+#title-services {
+  max-width: 1200px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #title-services h1 {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1000px) {
+  #title-services h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 770px) {
+  #title-services h1 {
+    font-size: 30px;
+  }
 }
