@@ -1421,6 +1421,13 @@
   justify-content: center;
 }
 
+.feature p {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 1000px) {
   .flex-card {
     flex-direction: column;
