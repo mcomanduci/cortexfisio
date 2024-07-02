@@ -15,7 +15,6 @@
     opacity: 1;
   }
 }
-
 @-moz-keyframes cf4FadeInOut {
   0% {
     opacity: 1;
@@ -33,7 +32,6 @@
     opacity: 1;
   }
 }
-
 @-o-keyframes cf4FadeInOut {
   0% {
     opacity: 1;
@@ -51,7 +49,6 @@
     opacity: 1;
   }
 }
-
 @keyframes cf4FadeInOut {
   0% {
     opacity: 1;
@@ -69,7 +66,6 @@
     opacity: 1;
   }
 }
-
 @keyframes zoomEffect {
   0% {
     transform: scale(1);
@@ -84,7 +80,6 @@
     transform: scale(1);
   }
 }
-
 #example {
   position: relative !important;
   height: 100vh;
@@ -92,23 +87,19 @@
 #example .slides {
   position: absolute !important;
 }
-
 #example .slides {
   -webkit-animation-name: cf4FadeInOut;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 25s;
-
   -moz-animation-name: cf4FadeInOut;
   -moz-animation-timing-function: ease-in-out;
   -moz-animation-iteration-count: infinite;
   -moz-animation-duration: 25s;
-
   -o-animation-name: cf4FadeInOut;
   -o-animation-timing-function: ease-in-out;
   -o-animation-iteration-count: infinite;
   -o-animation-duration: 25s;
-
   animation-name: cf4FadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -144,14 +135,12 @@
   -o-animation-delay: 0s;
   animation-delay: 0s;
 }
-
 #example .slides img {
   animation: zoomEffect 25s linear normal none infinite running;
   -webkit-animation: zoomEffect 25s linear normal none infinite running;
   -o-animation: zoomEffect 25s linear normal none infinite running;
   -moz--o-animation: zoomEffect 25s linear normal none infinite running;
 }
-
 #example .slides:nth-of-type(1) img {
   -webkit-animation-delay: 20s;
   -moz-animation-delay: 20s;
@@ -182,7 +171,6 @@
   -o-animation-delay: 0s;
   animation-delay: 0s;
 }
-
 #example {
   overflow: hidden;
 }

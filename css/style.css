@@ -385,7 +385,7 @@
     .header-carousel-item
     .carousel-caption
     .carousel-caption-content,
-    .header-carousel-test
+  .header-carousel-test
     .header-carousel-test-item
     .carousel-test-caption
     .carousel-test-caption-content {
@@ -1394,20 +1394,33 @@
   max-width: 1200px;
 }
 
+.display-sp {
+  font-size: calc(1.4rem + 3vw);
+}
+
 @media (min-width: 1000px) and (max-width: 1200px) {
-  #title-services h1 {
-    font-size: 55px;
+  .display-sp {
+    font-size: calc(1.2rem + 3vw) !important;
   }
 }
 
 @media (min-width: 770px) and (max-width: 1000px) {
-  #title-services h1 {
-    font-size: 40px;
+  .display-sp {
+    font-size: calc(0.8rem + 3vw) !important;
   }
 }
 
 @media (max-width: 770px) {
-  #title-services h1 {
-    font-size: 30px;
+  .display-sp {
+    font-size: calc(1rem + 3vw) !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wider {
+    width: 33% !important;
+  }
+  .padin {
+    padding-left: 64px;
   }
 }
