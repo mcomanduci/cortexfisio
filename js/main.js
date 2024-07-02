@@ -14,50 +14,6 @@
   // Initiate the wowjs
   new WOW().init();
 
-  // Sticky Navbar
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 45) {
-  //     $(".navbar").addClass("sticky-top shadow-sm");
-  //   } else {
-  //     $(".navbar").removeClass("sticky-top shadow-sm");
-  //   }
-  // });
-
-  // Hero Header carousel
-  // $(".header-carousel").owlCarousel({
-  //   // animateIn: "fadeIn",
-  //   animateOut: "zoomOut",
-  //   responsiveClass: true,
-  //   items: 1,
-  //   autoplay: true,
-  //   // autoplayTimeout: 5000,
-  //   // smartSpeed: 5000,
-  //   dots: false,
-  //   loop: true,
-  // });
-
-  // $(".header-carousel").on("changed.owl.carousel", function () {
-  //   $(".hero-banner").css("animation", "none");
-  //   window.requestAnimationFrame(function () {
-  //     $(".hero-banner").css("animation", "");
-  //   });
-  // });
-
-  // International carousel
-  $(".testimonial-carousel").owlCarousel({
-    autoplay: true,
-    items: 1,
-    smartSpeed: 1500,
-    dots: true,
-    loop: true,
-    margin: 25,
-    nav: true,
-    navText: [
-      '<i class="bi bi-arrow-left"></i>',
-      '<i class="bi bi-arrow-right"></i>',
-    ],
-  });
-
   // Modal Video
   $(document).ready(function () {
     var $videoSrc;
@@ -77,6 +33,20 @@
       $("#video").attr("src", $videoSrc);
     });
   });
+  // Testimonial carousel
+  // $(".testimonial-carousel").owlCarousel({
+  //   autoplay: true,
+  //   items: 1,
+  //   smartSpeed: 1500,
+  //   dots: true,
+  //   loop: true,
+  //   margin: 25,
+  //   nav: true,
+  //   navText: [
+  //     '<i class="bi bi-arrow-left"></i>',
+  //     '<i class="bi bi-arrow-right"></i>',
+  //   ],
+  // });
 
   // testimonial carousel
   $(".testimonial-carousel").owlCarousel({
@@ -85,30 +55,13 @@
     center: true,
     dots: true,
     loop: true,
-    margin: 25,
+    margin: 50,
     nav: true,
+    items: 1,
     navText: [
       '<i class="bi bi-arrow-left"></i>',
       '<i class="bi bi-arrow-right"></i>',
     ],
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      576: {
-        items: 1,
-      },
-      768: {
-        items: 1,
-      },
-      992: {
-        items: 1,
-      },
-      1200: {
-        items: 1,
-      },
-    },
   });
 
   // Back to top button
