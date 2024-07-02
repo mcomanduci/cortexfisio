@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
-    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,6 +35,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/carousel.css" />
   </head>
 
   <body>
@@ -54,7 +55,7 @@
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block" id="idle">
       <div class="row gx-0 align-items-center" style="height: 45px">
         <div class="col-lg-8 text-center text-lg-start mb-lg-0">
           <div class="d-flex flex-wrap">
@@ -63,54 +64,50 @@
               target="_blank"
               rel="noopener noreferrer"
               class="text-light me-4"
-              ><i class="fas fa-map-marker-alt text-primary me-2"></i
+              ><i class="fas fa-map-marker-alt text-primary me-2 top-icon"></i
               >Localização</a
             >
-            <a href="tel:" class="text-light me-4"
-              ><i class="fas fa-phone-alt text-primary me-2"></i>(37)
-              99999-9999</a
+            <a
+              href="tel:37996719764"
+              class="text-light me-4"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fas fa-phone-alt text-primary me-2 top-icon"></i>(37)
+              99671-9764</a
             >
             <a
-              href="mailto: cortexfisioespecializada@gmail.com"
+              href="mailto:cortexfisioespecializada@gmail.com"
               class="text-light me-0"
-              ><i class="fas fa-envelope text-primary me-2"></i
+              ><i class="fas fa-envelope text-primary me-2 top-icon"></i
               >cortexfisioespecializada@gmail.com</a
             >
           </div>
         </div>
         <div class="col-lg-4 text-center text-lg-end">
           <div class="d-flex align-items-center justify-content-end">
+            <!-- TODO:ADD SOCIAL MEDIA LINKS -->
             <a
-              href="#"
+              href="https://www.facebook.com/"
               class="btn btn-light btn-square border rounded-circle nav-fill me-3"
               ><i class="fab fa-facebook-f"></i
             ></a>
             <a
-              href="#"
-              class="btn btn-light btn-square border rounded-circle nav-fill me-3"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              href="#"
+              href="https://www.instagram.com/cortexfisio"
               class="btn btn-light btn-square border rounded-circle nav-fill me-3"
               ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              href="#"
-              class="btn btn-light btn-square border rounded-circle nav-fill me-0"
-              ><i class="fab fa-linkedin-in"></i
             ></a>
           </div>
         </div>
       </div>
     </div>
+    <!-- Topbar End -->
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
       <nav
         class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0"
       >
-        <a href="index.html" class="navbar-brand p-0">
+        <a href="/" class="navbar-brand p-0">
           <img src="img/logo.svg" alt="Logo" />
         </a>
         <button
@@ -128,8 +125,10 @@
             <a href="contact.html" class="nav-item nav-link">Contato</a>
           </div>
           <a
-            href="#"
+            href="https://api.whatsapp.com/send?phone=5537996719764&text=Olá!%20Gostaria%20de%20obter%20mais%20informações%20sobre%20as%20consultas%20de%20fisioterapia."
             class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0"
+            target="_blank"
+            rel="noopener noreferrer"
             >Agendar Consulta</a
           >
         </div>
@@ -215,23 +214,29 @@
             <div class="width-card">
               <h3>Dra. Ana Paula Silva</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus rhoncus feugiat vestibulum. Quisque viverra urna quis
-                dui euismod feugiat. Aenean porta sem eu ex laoreet varius in in
-                orci. Donec quam quam, dapibus quis massa non, suscipit eleifend
-                urna. Nullam interdum est in mi porta vehicula. Donec sapien
-                dui, egestas id diam faucibus, fringilla imperdiet justo. Sed
-                lacinia sagittis mauris vitae consectetur.
+                Sou Ana Paula Silva, uma dedicada fisioterapeuta com vários anos
+                de experiência na área. Ao longo da minha carreira, tenho me
+                destacado pela abordagem inovadora e personalizada no
+                atendimento aos pacientes, sempre focada em proporcionar a
+                melhor qualidade de vida e recuperação possível. Meu compromisso
+                com a excelência no atendimento me levou a fundar a Clínica
+                Córtex, um espaço que se destaca tanto pela infraestrutura
+                moderna quanto pela qualidade do cuidado oferecido.
               </p>
               <p>
-                Nulla mollis diam nisl, sed imperdiet odio commodo id. Class
-                aptent taciti sociosqu ad litora torquent per conubia nostra,
-                per inceptos himenaeos. Phasellus porttitor turpis sem, eget
-                ullamcorper elit commodo a. Donec dignissim hendrerit laoreet.
-                Fusce interdum felis dolor, eget accumsan ex laoreet eget.
-                Nullam et arcu mi. Nulla placerat non neque ac commodo. Mauris
-                sit amet nisi sed odio semper viverra. Nulla nec nisl purus.
+                Minha trajetória profissional é marcada pelo contínuo
+                aperfeiçoamento e especialização em diversas áreas da
+                fisioterapia, com ênfase na reabilitação ortopédica e esportiva.
+                Tenho formação em Quiropraxia Clínica, PNF (Facilitação
+                Neuromuscular Proprioceptiva) e mobilização tecidual. Além
+                disso, desenvolvi o método Biointegrativo, uma modalidade que
+                oferece fortalecimento específico para a área esportiva.
+                Complementando minha formação, participei de cursos
+                internacionais e concluí um Mestrado, mantendo-me sempre
+                atualizada com as mais recentes evidências científicas, técnicas
+                e práticas no campo da saúde.
               </p>
+              <p>Será um prazer te acompanhar na Cortex!</p>
             </div>
           </div>
           <div
@@ -274,22 +279,20 @@
             <div class="width-card">
               <h3>Dra. Danielle Barbosa Benfica</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus rhoncus feugiat vestibulum. Quisque viverra urna quis
-                dui euismod feugiat. Aenean porta sem eu ex laoreet varius in in
-                orci. Donec quam quam, dapibus quis massa non, suscipit eleifend
-                urna. Nullam interdum est in mi porta vehicula. Donec sapien
-                dui, egestas id diam faucibus, fringilla imperdiet justo. Sed
-                lacinia sagittis mauris vitae consectetur.
+                Olá, sou Dani Benfica, fisioterapeuta, formada há 18 anos,
+                mestre em fisioterapia. Sou uma entusiasta no estudo da dor,
+                dedicando-me a entender suas causas, manifestações e melhores
+                abordagens terapêuticas para proporcionar alívio e melhorar a
+                qualidade de vida dos meus pacientes.
               </p>
               <p>
-                Nulla mollis diam nisl, sed imperdiet odio commodo id. Class
-                aptent taciti sociosqu ad litora torquent per conubia nostra,
-                per inceptos himenaeos. Phasellus porttitor turpis sem, eget
-                ullamcorper elit commodo a. Donec dignissim hendrerit laoreet.
-                Fusce interdum felis dolor, eget accumsan ex laoreet eget.
-                Nullam et arcu mi. Nulla placerat non neque ac commodo. Mauris
-                sit amet nisi sed odio semper viverra. Nulla nec nisl purus.
+                Ao longo da minha carreira, tenho dedicado meu trabalho a
+                melhorar a qualidade de vida dos meus pacientes que sofrem com
+                diversas disfunções. Tenho um forte compromisso com a prática
+                baseada na evidência de alta qualidade. Gosto de alinhar
+                expectativas e objetivos junto ao paciente, afim de obter
+                sucesso na reabilitação prevenindo recorrências, educando
+                pacientes e promovendo um estilo de vida mais saudável e ativo.
               </p>
             </div>
           </div>
@@ -361,38 +364,40 @@
           <div class="col-md-6 col-lg-6 col-xl-3">
             <div class="footer-item d-flex flex-column">
               <div class="footer-logo-container">
-                <img class="footer-logo" src="img/logo-branca.png" alt="Logo" />
+                <a href="/">
+                  <img
+                    class="footer-logo"
+                    src="img/logo-branca.svg"
+                    alt="Logo"
+                  />
+                </a>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus dolorem impedit eos autem.
+              <p style="min-width: 300px">
+                Clínica de fisioterapia com tratamentos personalizados e
+                específicos feito por profissionais altamente capacitados.
               </p>
               <div class="d-flex align-items-center">
                 <i class="fas fa-share fa-2x text-white me-2"></i>
                 <a
                   class="btn-square btn btn-primary text-white rounded-circle mx-1"
-                  href=""
+                  id="sm-btn"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a
                   class="btn-square btn btn-primary text-white rounded-circle mx-1"
-                  href=""
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                  class="btn-square btn btn-primary text-white rounded-circle mx-1"
-                  href=""
+                  href="https://www.instagram.com/cortexfisio"
+                  id="sm-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fab fa-instagram"></i
-                ></a>
-                <a
-                  class="btn-square btn btn-primary text-white rounded-circle mx-1"
-                  href=""
-                  ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="col-md-6 col-lg-6 col-xl-3 padin lilwider">
             <div class="footer-item d-flex flex-column">
               <h4 class="mb-4 text-white">Links</h4>
               <a href=""
@@ -402,30 +407,30 @@
               <a href=""
                 ><i class="fas fa-angle-right me-2"></i> Termos & Condições</a
               >
-              <a href="/team.html"
+              <a href="team.html"
                 ><i class="fas fa-angle-right me-2"></i> Equipe</a
               >
-              <a href="/contact.html"
+              <a href="contact.html"
                 ><i class="fas fa-angle-right me-2"></i> Contato</a
               >
             </div>
           </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="col-md-6 col-lg-6 col-xl-3 wider">
             <div class="footer-item d-flex flex-column">
               <h4 class="mb-4 text-white">Contato</h4>
-              <a href=""
+              <a
+                href="https://maps.app.goo.gl/CnAbRPk4hLPi68uX7"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fa fa-map-marker-alt me-2"></i> Rua Dona Hilda, 129 -
-                Bom Pastor, Divinópolis - MG</a
+                Bom Pastor <span>Divinópolis - MG</span></a
               >
               <a href="mailto:cortexfisioespecializada@gmail.com"
                 ><i class="fas fa-envelope me-2"></i>
                 cortexfisioespecializada@gmail.com</a
               >
-              <a href="tel:"
-                ><i class="fas fa-phone me-2"></i> (37) 99999-9999</a
-              >
-              <a href="" class="mb-3"
-                ><i class="fas fa-print me-2"></i> (37) 3222-9999</a
+              <a href="tel:(37)996719764"
+                ><i class="fas fa-phone me-2"></i> (37) 99671-9764</a
               >
             </div>
           </div>
@@ -440,30 +445,19 @@
         <div class="row g-4 align-items-center">
           <div class="col-md-6 text-center text-md-start mb-md-0">
             <span class="text-white"
-              ><a href="#"
+              ><a href="/"
                 ><i class="fas fa-copyright text-light me-2"></i>Córtex
                 Fisioterapia</a
               >, Todos os Direitos Reservados.</span
             >
           </div>
-          <!-- <div class="col-md-6 text-center text-md-end text-white">
-            /*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/
-            /*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/
-            /*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/
-            Designed By
-            <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-            Distributed By
-            <a class="border-bottom" href="https://themewagon.com"
-              >ThemeWagon</a
-            >
-          </div> -->
         </div>
       </div>
     </div>
     <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square back-to-top"
+    <a href="#" class="btn btn-primary btn-lg-square" id="back-to-top"
       ><i class="fa fa-arrow-up"></i
     ></a>
 
