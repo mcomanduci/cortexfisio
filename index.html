@@ -114,7 +114,11 @@
       >
         <div class="navbar-container testeidle" id="desktop">
           <a href="/" class="navbar-brand p-0">
-            <img src="img/logo.svg" alt="Logo" id="logo" />
+            <picture>
+              <source srcset="img/logo.svg" type="image/svg" />
+              <source srcset="img/logo.png" type="image/png" />
+              <img src="img/logo.svg" alt="logo" />
+            </picture>
           </a>
           <div>
             <div class="navbar-collapse" id="navbarCollapse">
@@ -171,11 +175,16 @@
 
       <div class="header-carousel-test" id="example">
         <div class="header-carousel-test-item slides">
-          <img
-            src="img/carousel-1.avif"
-            alt=""
-            class="img-fluid w-100 hero-banner"
-          />
+          <picture>
+            <source srcset="img/carousel-1.avif" type="image/avif" />
+            <source srcset="img/carousel/carousel-1.jpg" type="image/png" />
+            <img
+              src="img/carousel-1.avif"
+              alt=""
+              class="img-fluid w-100 hero-banner"
+            />
+          </picture>
+
           <div class="carousel-test-caption">
             <div class="carousel-test-caption-content p-3">
               <h1 class="display-3 text-white mb-4">
@@ -246,11 +255,15 @@
         </div>
 
         <div class="header-carousel-test-item slides">
-          <img
-            src="img/carousel-6.avif"
-            alt=""
-            class="img-fluid w-100 hero-banner"
-          />
+          <picture>
+            <source srcset="img/carousel-6.avif" type="image/avif" />
+            <source srcset="img/carousel/carousel-6.jpg" type="image/png" />
+            <img
+              src="img/carousel-6.avif"
+              alt=""
+              class="img-fluid w-100 hero-banner"
+            />
+          </picture>
           <div class="carousel-test-caption">
             <div class="carousel-test-caption-content p-3">
               <h1 class="display-3 text-white mb-4">
