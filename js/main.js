@@ -94,17 +94,17 @@
 
 // TEST IDLE
 
-let interval = 1;
+let interval = 0;
 
 setInterval(function () {
-  if (interval == 48) {
+  if (interval == 60) {
     $(".testeidle").hide();
-    interval = 1;
+    interval = 0;
   }
   interval = interval + 1;
 }, 1000);
 
 $(document).bind("mousemove keypress", function () {
   $(".testeidle").show();
-  interval = 1;
+  interval = 0;
 });
