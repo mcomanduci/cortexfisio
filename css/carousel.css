@@ -87,6 +87,7 @@
 #example .slides {
   position: absolute !important;
 }
+
 #example .slides {
   -webkit-animation-name: cf4FadeInOut;
   -webkit-animation-timing-function: ease-in-out;

@@ -579,6 +579,10 @@
   border-radius: 50%;
 }
 
+.about-img-inner {
+  background-color: white;
+}
+
 .about .about-img .about-experience {
   position: absolute;
   top: 125px;
@@ -1464,4 +1468,33 @@
 
 .blue-icon::before {
   color: var(--bs-primary) !important;
+}
+
+#example .btn {
+  position: absolute !important;
+  transform: translate(-50%, -50%);
+  bottom: 10%;
+  left: 50%;
+}
+
+@media (max-width: 490px) {
+  #example .btn {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+#back-to-top {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+#back-to-top:hover i::before {
+  color: var(--bs-primary) !important;
+}
+
+@media (max-width: 390px) {
+  .rempad {
+    padding-right: 2px;
+  }
 }
