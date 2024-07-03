@@ -29,7 +29,7 @@
     });
 
     $("#videoModal").on("hide.bs.modal", function (e) {
-      $("#video").attr("src", '');
+      $("#video").attr("src", "");
     });
   });
 
@@ -91,3 +91,20 @@
     return false;
   });
 })(jQuery);
+
+// TEST IDLE
+
+let interval = 1;
+
+setInterval(function () {
+  if (interval == 48) {
+    $(".testeidle").hide();
+    interval = 1;
+  }
+  interval = interval + 1;
+}, 1000);
+
+$(document).bind("mousemove keypress", function () {
+  $(".testeidle").show();
+  interval = 1;
+});

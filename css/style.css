@@ -1332,7 +1332,7 @@
 
   #fixo-desktop .navbar-container {
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.38);
+    background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     align-items: center;
     justify-content: space-around;
