@@ -1497,4 +1497,8 @@
   .rempad {
     padding-right: 2px;
   }
+
+  .small-mail {
+    font-size: 0.9rem;
+  }
 }
