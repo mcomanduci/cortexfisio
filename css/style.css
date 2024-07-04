@@ -575,7 +575,7 @@
   left: 0;
   bottom: 0;
   border: 10px solid;
-  border-color: var(--bs-white) var(--bs-white) var(--bs-white) var(--bs-white);
+  border-color: var(--bs-white);
   border-radius: 50%;
 }
 
@@ -1239,7 +1239,8 @@
 
 .flex-card {
   display: flex;
-  gap: 48px;
+  /* gap: 2.5rem; */
+  gap: 46px;
 }
 
 .reverse {
@@ -1501,4 +1502,18 @@
   .small-mail {
     font-size: 0.9rem;
   }
+}
+
+.marg-mail {
+  margin-left: 4rem;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .marg-mail {
+    margin-left: 6.5rem;
+  }
+}
+
+.after {
+  display: none !important;
 }
