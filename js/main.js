@@ -108,7 +108,3 @@ $(document).bind("mousemove keypress", function () {
   $(".testeidle").show();
   interval = 0;
 });
-
-window.onload = function () {
-  $(".after").removeClass("after");
-};
