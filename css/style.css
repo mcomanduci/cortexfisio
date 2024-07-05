@@ -1478,10 +1478,23 @@
   left: 50%;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 600px) {
   #example .btn {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+    bottom: 15%;
+  }
+}
+
+@media (max-width: 361px) {
+  #example .btn {
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+  }
+}
+
+@media (min-width: 362px) and (max-width: 490px) {
+  #example .btn {
+    padding-left: 1.3rem !important;
+    padding-right: 1.3rem !important;
   }
 }
 

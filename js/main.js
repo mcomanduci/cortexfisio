@@ -55,10 +55,10 @@
     const name = $("#name-form-index").val();
     const email = $("#email-form-index").val();
     const phone = $("#phone-form-index").val();
-    const gender = $("#gender-form-index").val();
+    const subject = $("#subject-form-index").val();
     const message = $("#text-form-index").val();
 
-    const url = `https://api.whatsapp.com/send?phone=${number}&text=Nome: ${name}%0aEmail: ${email}%0aTelefone: ${phone}%0aMensagem: ${message}%0a`;
+    const url = `https://api.whatsapp.com/send?phone=${number}&text=Nome: ${name}%0aEmail: ${email}%0aTelefone: ${phone}%0aAssunto: ${subject}%0aMensagem: ${message}%0a`;
     window.open(url, "_blank", "noreferrer").focus();
   }
 
